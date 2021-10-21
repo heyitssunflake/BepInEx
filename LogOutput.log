@@ -1,0 +1,458 @@
+[Message:   BepInEx] BepInEx 5.4.15.0 - valheim (10/2/2021 1:52:53 AM)
+[Info   :   BepInEx] Running under Unity v2019.4.24.6137584
+[Info   :   BepInEx] CLR runtime version: 4.0.30319.42000
+[Info   :   BepInEx] Supports SRE: True
+[Info   :   BepInEx] System platform: Bits64, Windows
+[Message:   BepInEx] Preloader started
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.Preloader 5.4.15.0]
+[Info   :   BepInEx] Loaded 1 patcher method from [BepInEx.MonoMod.HookGenPatcher 1.2.0.0]
+[Info   :   BepInEx] 2 patcher plugins loaded
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :HookGenPatcher] Previous MMHOOK location found. Using that location to save instead.
+[Info   :HookGenPatcher] Already ran for this version, reusing that file.
+[Info   :   BepInEx] Patching [UnityEngine.CoreModule] with [BepInEx.Chainloader]
+[Message:   BepInEx] Preloader finished
+[Message:   BepInEx] Chainloader ready
+[Message:   BepInEx] Chainloader started
+[Info   :   BepInEx] 44 plugins to load
+[Warning:   BepInEx] Plugin [Jotunn 2.3.5] targets a wrong version of BepInEx (5.4.16.0) and might not work until you update
+[Info   :   BepInEx] Loading [PlantEverything 1.8.4]
+[Info   : PlantEverything] Initialized Server Authoritative Config Manager.
+[Info   :   BepInEx] Loading [Valheim Configuration Manager 0.5.0]
+[Info   :   BepInEx] Loading [Custom Armor Stats 0.3.0]
+[Warning:  HarmonyX] AccessTools.DeclaredMethod: Could not find method for type Humanoid and name DamageArmorDurability and parameters 
+[Warning:  HarmonyX] Unknown patch - Could not find method DamageArmorDurability with 0 parameters in type Humanoid, but it was found in base class of this type Character
+[Info   : Unity Log] CustomArmorStats Transpiling UpdateEnvStatusEffects
+[Info   : Unity Log] CustomArmorStats Adding frost immune and ignore
+[Info   :   BepInEx] Loading [Custom Weapon Stats 0.6.1]
+[Info   :   BepInEx] Loading [Recipe Customization 0.5.1]
+[Info   :   BepInEx] Loading [Forgotten Biomes 0.0.12]
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: Running on Windows based server 
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: loaded config from : E:\SteamLibrary\steamapps\common\Valheim\BepInEx\plugins\Forgotten_Biomes\ashlands.veg
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: loaded config from : E:\SteamLibrary\steamapps\common\Valheim\BepInEx\plugins\Forgotten_Biomes\deepnorth.veg
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: loaded config from : E:\SteamLibrary\steamapps\common\Valheim\BepInEx\plugins\Forgotten_Biomes\blackforest.veg
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: loaded config from : E:\SteamLibrary\steamapps\common\Valheim\BepInEx\plugins\Forgotten_Biomes\mountain.veg
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: loaded config from : E:\SteamLibrary\steamapps\common\Valheim\BepInEx\plugins\Forgotten_Biomes\swamp.veg
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: loaded config from : E:\SteamLibrary\steamapps\common\Valheim\BepInEx\plugins\Forgotten_Biomes\plains.veg
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: loaded config from : E:\SteamLibrary\steamapps\common\Valheim\BepInEx\plugins\Forgotten_Biomes\mistlands.veg
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: loaded config from : E:\SteamLibrary\steamapps\common\Valheim\BepInEx\plugins\Forgotten_Biomes\ocean.veg
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: loaded config from : E:\SteamLibrary\steamapps\common\Valheim\BepInEx\plugins\Forgotten_Biomes\hiddenlocations.loc
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: loaded config from : E:\SteamLibrary\steamapps\common\Valheim\BepInEx\plugins\Forgotten_Biomes\disabledlocation.loc
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Forgotten_Biomes: loaded config from : E:\SteamLibrary\steamapps\common\Valheim\BepInEx\plugins\Forgotten_Biomes\removelocation.loc
+
+[Info   : Unity Log] CustomArmorStats Transpiling UpdateEnvStatusEffects
+[Info   : Unity Log] CustomArmorStats Adding frost immune and ignore
+[Info   :   BepInEx] Loading [Custom Raids 1.4.0]
+[Info   :Custom Raids] Loading configurations...
+[Info   :   BepInEx] Loading [Creature Level & Loot Control 4.4.3]
+[Info   : Unity Log] 10/21/2021 12:10:13: Loaded localization CSV:localization language:English
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Loaded localization CSV:localization_extra language:English
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Loaded localization CSV:localization language:English
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Loaded localization CSV:localization_extra language:English
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Loaded localization CSV:localization language:English
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Loaded localization CSV:localization_extra language:English
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Loaded localization CSV:localization language:English
+
+[Info   : Unity Log] 10/21/2021 12:10:13: Loaded localization CSV:localization_extra language:English
+
+[Info   : Unity Log] 10/21/2021 12:10:14: Loaded localization CSV:localization language:English
+
+[Info   : Unity Log] 10/21/2021 12:10:14: Loaded localization CSV:localization_extra language:English
+
+[Info   :   BepInEx] Loading [Extended Item Data Framework 1.0.5]
+[Info   :   BepInEx] Loading [Epic Loot 0.8.7]
+[Info   : Unity Log] CustomArmorStats Transpiling UpdateEnvStatusEffects
+[Info   : Unity Log] CustomArmorStats Adding frost immune and ignore
+[Info   :   BepInEx] Loading [Spawn That! 0.11.3]
+[Message:Spawn That!] Loading general configurations
+[Message:Spawn That!] Finished loading general configurations
+[Info   :   BepInEx] Loading [Drop That! 2.1.0]
+[Message:Drop That!] Loading general configuration from E:\SteamLibrary\steamapps\common\Valheim\BepInEx\config\drop_that.cfg.
+[Info   :   BepInEx] Loading [Jotunn 2.3.5]
+[Info   :    Jotunn] Initializing LocalizationManager
+[Info   :    Jotunn] Initializing CommandManager
+[Info   :    Jotunn] Initializing InputManager
+[Info   :    Jotunn] Initializing SkillManager
+[Info   :    Jotunn] Initializing PrefabManager
+[Info   :    Jotunn] Initializing ItemManager
+[Info   :    Jotunn] Initializing PieceManager
+[Info   :    Jotunn] Initializing MockManager
+[Info   :    Jotunn] Initializing KitbashManager
+[Info   :    Jotunn] Initializing GUIManager
+[Info   :    Jotunn] Initializing SynchronizationManager
+[Info   :    Jotunn] Jötunn v2.3.5 loaded successfully
+[Info   :   BepInEx] Loading [BoneAppetit 3.0.2]
+[Message:Boneappetit.BoneAppetit] Prepping Kitchen...
+[Message:Boneappetit.BoneAppetit] Big thanks to MeatwareMonster!
+[Info   :   BepInEx] Loading [FoodEditor 1.0.0]
+[Warning: Unity Log] items Json Files Found: 9
+[Warning: Unity Log] Item JsonFiles Loaded: 9
+[Info   :   BepInEx] Loading [OpenDatabase 1.0]
+[Info   :   BepInEx] Loading [RRRCore 0.2.10]
+[Info   :   BepInEx] Loading [RRRNpcs 0.2.3]
+[Info   :   BepInEx] Loading [RRRMonsters 0.2.2]
+[Info   :   BepInEx] Loading [RRRBetterRaids 0.2.2]
+[Info   :   BepInEx] Loading [SimpleRecycling 0.0.13]
+[Info   :   BepInEx] Loading [SkillInjectorMod 1.1.1]
+[Info   :   BepInEx] Loading [Crawler 0.0.7]
+[Info   : Unity Log] Loading Nasty Crawler
+[Info   :   BepInEx] Loading [Better Networking 1.1.0]
+[Info   :   BepInEx] Loading [MonsterLabZ 1.7.0]
+[Info   :   BepInEx] Loading [Digitalroot EpicLoot Adventure Bounties 2.1.0]
+[Info   :   BepInEx] Loading [Digitalroot Valheim EpicLoot Adventure Bounties for Epic Valheim 1.2.1]
+[Info   :   BepInEx] Loading [BlacksmithTools 1.2.4]
+[Info   :   BepInEx] Loading [Golem 0.0.7]
+[Info   : Unity Log] Loading Golem
+[Info   :   BepInEx] Loading [AllTameable-HHSupport 1.0.4]
+[Warning:AllTameable-HHSupport] Found TameList file
+[Info   :AllTameable-HHSupport] succesfully added Boar to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Greyling to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Neck to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Eikthyr to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Greydwarf to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Skeleton to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Skeleton_Poison to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Surtling to the tametable
+[Info   :AllTameable-HHSupport] succesfully added gd_king to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Blob to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Draugr to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Ghost to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Greydwarf_Shaman to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Leech to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Serpent to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Wraith to the tametable
+[Info   :AllTameable-HHSupport] succesfully added BlobElite to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Bonemass to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Greydwarf_Elite to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Deathsquito to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Draugr_Elite to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Fenring to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Goblin to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Hatchling to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Lox to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Troll to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Wolf to the tametable
+[Info   :AllTameable-HHSupport] succesfully added Dragon to the tametable
+[Info   :AllTameable-HHSupport] succesfully added GoblinBrute to the tametable
+[Info   :AllTameable-HHSupport] succesfully added GoblinKing to the tametable
+[Info   :AllTameable-HHSupport] succesfully added GoblinShaman to the tametable
+[Info   :AllTameable-HHSupport] succesfully added StoneGolem to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_GreaterFenring_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_ElderSpawn_BF_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_ElderSpawn_ML_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_LivingWater_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_WolfForest_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_IceOgre_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Molluscan_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_FrozenBones_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_TreeSpider_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Stormling_SE_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Lich_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_FrostSpider_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Frostling_SE_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Voidling_SE_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_BlackSpider_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_SmallBlackSpider_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_VileFang_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Vilesquito_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_JumpingSpider_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_VoidSpider_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_IceDrake_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_DireWolf_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_IceGolem_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Vanquished_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_GreaterSurtling_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_FlameDrake_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_ObsidianGolem_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_FireGolem_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Tormented_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_LivingLava_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added CharredRemains_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Boar_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Greyling_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Neck_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Greydwarf_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Skeleton_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Skeleton_Poison_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Surtling_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Blob_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Draugr_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Ghost_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Greydwarf_Shaman_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Leech_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Serpent_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Wraith_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_BlobElite_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Greydwarf_Elite_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Deathsquito_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Draugr_Elite_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Fenring_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Goblin_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Hatchling_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Lox_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Troll_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_Wolf_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_GoblinBrute_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_GoblinShaman_DoD to the tametable
+[Info   :AllTameable-HHSupport] succesfully added RRRM_StoneGolem_DoD to the tametable
+[Info   :AllTameable-HHSupport] Found Tamelist Config, using this file
+[Info   :AllTameable-HHSupport] AllTameable:Your list has: Boar  Greyling  Neck  Eikthyr  Greydwarf  Skeleton  Skeleton_Poison  Surtling  gd_king  Blob  Draugr  Ghost  Greydwarf_Shaman  Leech  Serpent  Wraith  BlobElite  Bonemass  Greydwarf_Elite  Deathsquito  Draugr_Elite  Fenring  Goblin  Hatchling  Lox  Troll  Wolf  Dragon  GoblinBrute  GoblinKing  GoblinShaman  StoneGolem  RRRM_GreaterFenring_DoD  RRRM_ElderSpawn_BF_DoD  RRRM_ElderSpawn_ML_DoD  RRRM_LivingWater_DoD  RRRM_WolfForest_DoD  RRRM_IceOgre_DoD  RRRM_Molluscan_DoD  RRRM_FrozenBones_DoD  RRRM_TreeSpider_DoD  RRRM_Stormling_SE_DoD  RRRM_Lich_DoD  RRRM_FrostSpider_DoD  RRRM_Frostling_SE_DoD  RRRM_Voidling_SE_DoD  RRRM_BlackSpider_DoD  RRRM_SmallBlackSpider_DoD  RRRM_VileFang_DoD  RRRM_Vilesquito_DoD  RRRM_JumpingSpider_DoD  RRRM_VoidSpider_DoD  RRRM_IceDrake_DoD  RRRM_DireWolf_DoD  RRRM_IceGolem_DoD  RRRM_Vanquished_DoD  RRRM_GreaterSurtling_DoD  RRRM_FlameDrake_DoD  RRRM_ObsidianGolem_DoD  RRRM_FireGolem_DoD  RRRM_Tormented_DoD  RRRM_LivingLava_DoD  CharredRemains_DoD  RRRM_Boar_DoD  RRRM_Greyling_DoD  RRRM_Neck_DoD  RRRM_Greydwarf_DoD  RRRM_Skeleton_DoD  RRRM_Skeleton_Poison_DoD  RRRM_Surtling_DoD  RRRM_Blob_DoD  RRRM_Draugr_DoD  RRRM_Ghost_DoD  RRRM_Greydwarf_Shaman_DoD  RRRM_Leech_DoD  RRRM_Serpent_DoD  RRRM_Wraith_DoD  RRRM_BlobElite_DoD  RRRM_Greydwarf_Elite_DoD  RRRM_Deathsquito_DoD  RRRM_Draugr_Elite_DoD  RRRM_Fenring_DoD  RRRM_Goblin_DoD  RRRM_Hatchling_DoD  RRRM_Lox_DoD  RRRM_Troll_DoD  RRRM_Wolf_DoD  RRRM_GoblinBrute_DoD  RRRM_GoblinShaman_DoD  RRRM_StoneGolem_DoD  
+[Info   :AllTameable-HHSupport] AllTameable Loadded
+[Info   :   BepInEx] Loading [BetterTrader 2.0.5.1]
+[Info   :   BepInEx] Loading [Monsterzz 0.0.7]
+[Info   :   BepInEx] Loading [Valheim Plus 0.9.9]
+[Info   :Valheim Plus] Trying to load the configuration file
+[Info   : Unity Log] Loading config section AdvancedBuildingMode
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section AdvancedEditingMode
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Bed
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Beehive
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Building
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Deconstruct
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Inventory
+[Info   : Unity Log]  Loading key inventoryFillTopToBottom
+[Info   : Unity Log]  Loading key mergeWithExistingStacks
+[Info   : Unity Log]  Loading key playerInventoryRows
+[Info   : Unity Log]  Loading key woodChestColumns
+[Info   : Unity Log]  Loading key woodChestRows
+[Info   : Unity Log]  Loading key personalChestColumns
+[Info   : Unity Log]  Loading key personalChestRows
+[Info   : Unity Log]  Loading key ironChestColumns
+[Info   : Unity Log]  Loading key ironChestRows
+[Info   : Unity Log]  Loading key cartInventoryColumns
+[Info   : Unity Log]  Loading key cartInventoryRows
+[Info   : Unity Log]  Loading key karveInventoryColumns
+[Info   : Unity Log]  Loading key karveInventoryRows
+[Info   : Unity Log]  Loading key longboatInventoryColumns
+[Info   : Unity Log]  Loading key longboatInventoryRows
+[Info   : Unity Log] Loading config section Items
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Fermenter
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section FireSource
+[Info   : Unity Log]  Loading key torches
+[Info   : Unity Log]  Loading key fires
+[Info   : Unity Log]  Loading key autoFuel
+[Info   : Unity Log]  Loading key ignorePrivateAreaCheck
+[Info   : Unity Log]  Loading key autoRange
+[Info   : Unity Log] Loading config section Food
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Smelter
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Furnace
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Hotkeys
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Kiln
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Windmill
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section SpinningWheel
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Map
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Player
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Server
+[Info   : Unity Log]  Loading key maxPlayers
+[Info   : Unity Log]  Loading key disableServerPassword
+[Info   : Unity Log]  Loading key enforceMod
+[Info   : Unity Log]  Loading key serverSyncsConfig
+[Info   : Unity Log]  Loading key serverSyncHotkeys
+[Info   : Unity Log] Loading config section Stamina
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section StaminaUsage
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Workbench
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Time
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Ward
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section StructuralIntegrity
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Tameable
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Hud
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Experience
+[Info   : Unity Log]  Loading key swords
+[Info   : Unity Log]  Loading key knives
+[Info   : Unity Log]  Loading key clubs
+[Info   : Unity Log]  Loading key polearms
+[Info   : Unity Log]  Loading key spears
+[Info   : Unity Log]  Loading key blocking
+[Info   : Unity Log]  Loading key axes
+[Info   : Unity Log]  Loading key bows
+[Info   : Unity Log]  Loading key fireMagic
+[Info   : Unity Log]  Loading key frostMagic
+[Info   : Unity Log]  Loading key unarmed
+[Info   : Unity Log]  Loading key pickaxes
+[Info   : Unity Log]  Loading key woodCutting
+[Info   : Unity Log]  Loading key jump
+[Info   : Unity Log]  Loading key sneak
+[Info   : Unity Log]  Loading key run
+[Info   : Unity Log]  Loading key swim
+[Info   : Unity Log] Loading config section Camera
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Game
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Wagon
+[Info   : Unity Log]  Loading key wagonExtraMassFromItems
+[Info   : Unity Log]  Loading key wagonBaseMass
+[Info   : Unity Log] Loading config section Gathering
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Pickable
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Durability
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Armor
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section FreePlacementRotation
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Shields
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section FirstPerson
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section GridAlignment
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section CraftFromChest
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section ValheimPlus
+[Info   : Unity Log]  Loading key mainMenuLogo
+[Info   : Unity Log]  Loading key serverBrowserAdvertisement
+[Info   : Unity Log] Loading config section PlayerProjectile
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section MonsterProjectile
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section GameClock
+[Info   : Unity Log]  Section not enabled
+[Info   : Unity Log] Loading config section Brightness
+[Info   : Unity Log]  Section not enabled
+[Info   :Valheim Plus] Configuration file loaded succesfully.
+[Info   :Valheim Plus] ValheimPlus [0.9.9] is up to date.
+[Info   :   BepInEx] Loading [Display BepInEx Info In-Game 2.0.0]
+[Info   :   BepInEx] Loading [Vitality Skill 1.5.0.7]
+[Info   :   BepInEx] Loading [ChaosArmor 6.0.5]
+[Info   :   BepInEx] Loading [Skyheim 1.1.1]
+[Info   :   BepInEx] Loading [Epic Valheims Additions - by Huntard 1.2.8]
+[Info   :SupplementalItems.SupplementalItems] Loaded Prefabs
+[Info   :SupplementalItems.SupplementalItems] Loaded CraftingPieces
+[Info   :SupplementalItems.SupplementalItems] Loaded Ingots/scales
+[Info   :SupplementalItems.SupplementalItems] Loaded MiscItems
+[Info   :SupplementalItems.SupplementalItems] Loaded FrometalWeapons
+[Info   :SupplementalItems.SupplementalItems] Loaded FlametalWeapons
+[Info   :SupplementalItems.SupplementalItems] Loaded HeavymetalWeapons
+[Info   :SupplementalItems.SupplementalItems] Loaded Custom Recipes
+[Info   :   BepInEx] Loading [WendigoMonsterZZ 0.0.7]
+[Info   : Unity Log] Loading Wendigo1
+[Info   : Unity Log] Loading Wendigo2
+[Info   :   BepInEx] Loading [WereBearZZ 0.0.7]
+[Info   : Unity Log] Loading Bear1
+[Info   : Unity Log] Loading Bear2
+[Info   : Unity Log] Loading Bear3
+[Info   :   BepInEx] Loading [WhereWolves 0.0.7]
+[Info   : Unity Log] Loading Wolf1
+[Info   : Unity Log] Loading Wolf2
+[Info   : Unity Log] Loading Wolf3
+[Info   : Unity Log] Loading Wolf4
+[Info   : Unity Log] Loading Wolf5
+[Info   :   BepInEx] Loading [Wizard 0.0.7]
+[Info   : Unity Log] Loading Wizard
+[Info   :   BepInEx] Loading [MassFarming 1.0]
+[Info   :   BepInEx] Loading [YetiMonsterZ 0.0.7]
+[Info   : Unity Log] Loading Yeti
+[Message:   BepInEx] Chainloader startup complete
+[Info   : Unity Log] 10/21/2021 12:10:40: Starting to load scene:start
+
+[Info   : Unity Log] ConfigurationManager Searching for vanilla Config Manager.
+[Info   : Unity Log] ConfigurationManager Vanilla Config Manager not found.
+[Info   : Unity Log] loaded Blacksmith's Tools
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+BetterTrader.EnvMan_Patches.SaveDayTrackingValues () (at <360240df75774aacbab6b69e9b21443f>:0)
+BetterTrader.BetterTrader.SavePersistentValues () (at <360240df75774aacbab6b69e9b21443f>:0)
+BetterTrader.BetterTrader.OnApplicationQuit () (at <360240df75774aacbab6b69e9b21443f>:0)
+
+[Warning: Unity Log] Only custom filters can be played. Please add a custom filter or an audioclip to the audiosource (Amb_MainMenu).
+[Info   : Unity Log] Version generator started.
+[Info   : Unity Log] Version generated with enforced mod : 0.203.11@0.9.9
+[Info   : Unity Log] 10/21/2021 12:10:44: Valheim version:0.203.11@0.9.9
+
+[Info   : Unity Log] Version generator started.
+[Info   : Unity Log] Version generated with enforced mod : 0.203.11@0.9.9
+[Info   :Jotunn.Managers.CommandManager] Adding 1 commands to the Console
+[Info   : Unity Log] 10/21/2021 12:10:44: Render threading mode:LegacyJobified
+
+[Info   : Unity Log] Version generator started.
+[Info   : Unity Log] Version generated with enforced mod : 0.203.11@0.9.9
+[Info   : Unity Log] 10/21/2021 12:10:44: Using environment steamid 892970
+
+[Info   : Unity Log] 10/21/2021 12:10:44: Using steam APPID:892970
+
+[Info   : Unity Log] 10/21/2021 12:10:44: Authentication:k_ESteamNetworkingAvailability_Attempting
+
+[Info   : Unity Log] 10/21/2021 12:10:44: Steam initialized, persona:Sunflake
+
+[Warning: Unity Log] 10/21/2021 12:10:44: Missing audio clip in music respawn
+
+[Info   : Unity Log] 10/21/2021 12:10:44: Checking for installed DLCs
+
+[Info   : Unity Log] 10/21/2021 12:10:44: DLC:beta installed:False
+
+[Info   : Unity Log] CustomArmorStats Transpiling UpdateEnvStatusEffects
+[Info   : Unity Log] CustomArmorStats Adding frost immune and ignore
+[Info   : Unity Log] CustomArmorStats Transpiling UpdateEnvStatusEffects
+[Info   : Unity Log] CustomArmorStats Adding frost immune and ignore
+[Info   : Unity Log] CustomArmorStats Transpiling UpdateEnvStatusEffects
+[Info   : Unity Log] CustomArmorStats Adding frost immune and ignore
+[Info   : Unity Log] Unpatching now
+[Info   : Unity Log] CustomArmorStats Transpiling UpdateEnvStatusEffects
+[Info   : Unity Log] CustomArmorStats Adding frost immune and ignore
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+ABearCodes.Valheim.SimpleRecycling.UI.ContainerRecyclingButtonHolder.OnDestroy () (at <53d5063764fa4559bad6a861499bd690>:0)
+
+[Error  : Unity Log] NullReferenceException: Object reference not set to an instance of an object
+Stack trace:
+ABearCodes.Valheim.SimpleRecycling.UI.StationRecyclingTabHolder.OnDestroy () (at <53d5063764fa4559bad6a861499bd690>:0)
+
+[Info   : Unity Log] 10/21/2021 12:10:46: Steam manager on destroy
+
