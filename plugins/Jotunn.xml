@@ -881,11 +881,37 @@
                 The help text that will be displayed to the user for your command when they type `help` into their console.
             </summary>
         </member>
+        <member name="P:Jotunn.Entities.ConsoleCommand.IsCheat">
+            <summary>
+                If true, this command will only work after `devcommands` is run in the console.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Entities.ConsoleCommand.IsNetwork">
+            <summary>
+                If true, this command will be allowed in networked play.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Entities.ConsoleCommand.OnlyServer">
+            <summary>
+                If true, and IsNetwork is true, this command will be allowed in networked play, but only for the server.
+            </summary>
+        </member>
+        <member name="P:Jotunn.Entities.ConsoleCommand.IsSecret">
+            <summary>
+                If true, this command will not be shown when the user types `help` into their console.
+            </summary>
+        </member>
         <member name="M:Jotunn.Entities.ConsoleCommand.Run(System.String[])">
             <summary>
                 The function that will be called when the user runs your console command, with space-delimited arguments.
             </summary>
             <param name="args">The arguments the user types, with spaces being the delimiter.</param>
+        </member>
+        <member name="M:Jotunn.Entities.ConsoleCommand.CommandOptionList">
+            <summary>
+                Override this function to return a list of strings that are valid options for your command
+            </summary>
+            <returns>List of valid command options</returns>
         </member>
         <member name="M:Jotunn.Entities.ConsoleCommand.ToString">
             <inheritdoc/>
@@ -1674,6 +1700,16 @@
             <typeparam name="TArg1"></typeparam>
             <param name="events"></param>
             <param name="arg1"></param>
+        </member>
+        <member name="M:Jotunn.EventExtensions.SafeInvoke``2(System.Action{``0,``1},``0,``1)">
+            <summary>
+                try/catch the delegate chain so that it doesnt break on the first failing Delegate.
+            </summary>
+            <typeparam name="TArg1"></typeparam>
+            <typeparam name="TArg2"></typeparam>
+            <param name="events"></param>
+            <param name="arg1"></param>
+            <param name="arg2"></param>
         </member>
         <member name="M:Jotunn.EventExtensions.SafeInvoke``1(System.EventHandler{``0},System.Object,``0)">
             <summary>
@@ -2548,6 +2584,11 @@
                 The singleton instance of this manager.
             </summary>
         </member>
+        <member name="F:Jotunn.Managers.CommandManager.OnGetTabOptions">
+            <summary>
+                Internal Action delegate to add custom entities into vanilla command's option list
+            </summary>
+        </member>
         <member name="P:Jotunn.Managers.CommandManager.CustomCommands">
             <summary>
                 A list of all the custom console commands that have been added to the game through this manager,
@@ -2564,6 +2605,15 @@
                 Adds a new console command to Valheim.
             </summary>
             <param name="cmd">The console command to add</param>
+        </member>
+        <member name="M:Jotunn.Managers.CommandManager.ConsoleCommand_GetTabOptions(On.Terminal.ConsoleCommand.orig_GetTabOptions,Terminal.ConsoleCommand)">
+            <summary>
+                Fire <see cref="F:Jotunn.Managers.CommandManager.OnGetTabOptions"/> for any ConsoleCommand when its tabOptions member
+                is first populated to add Jötunn entities to the option list
+            </summary>
+            <param name="orig"></param>
+            <param name="self"></param>
+            <returns></returns>
         </member>
         <member name="T:Jotunn.Managers.GUIManager">
             <summary>
@@ -3348,14 +3398,14 @@
             </summary>
             <param name="hintConfig">The custom key hint config to add.</param>
         </member>
+        <member name="M:Jotunn.Managers.KeyHintManager.GetBaseGameObjects(On.KeyHints.orig_Start,KeyHints)">
+            <summary>
+                Instantiate base GameObjects from vanilla KeyHints to use in our custom key hints
+            </summary>
+        </member>
         <member name="M:Jotunn.Managers.KeyHintManager.KeyHints_Start(On.KeyHints.orig_Start,KeyHints)">
             <summary>
                 Extract base key hint elements and create key hint objects.
-            </summary>
-        </member>
-        <member name="M:Jotunn.Managers.KeyHintManager.GetBaseGameObjects">
-            <summary>
-                Instantiate base GameObjects from vanilla KeyHints to use in our custom key hints
             </summary>
         </member>
         <member name="M:Jotunn.Managers.KeyHintManager.CreateKeyHintObject(Jotunn.Configs.KeyHintConfig)">
@@ -3859,10 +3909,15 @@
                 Create piece categories per table if custom categories were added.
             </summary>
         </member>
-        <member name="M:Jotunn.Managers.PieceManager.CreateCategoryTabs(UnityEngine.SceneManagement.Scene,UnityEngine.SceneManagement.LoadSceneMode)">
+        <member name="M:Jotunn.Managers.PieceManager.CreateCategoryTabs(On.Hud.orig_Awake,Hud)">
             <summary>
                 Create tabs for the ingame GUI for every piece table category.
-                Only executes when custom piece table categories were added.
+                Only executes when custom piece table catego-ries were added.
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.PieceManager.UpdatePieceCategories">
+            <summary>
+                Reorder piece table tabs if the table if opened currently
             </summary>
         </member>
         <member name="M:Jotunn.Managers.PieceManager.TogglePieceCategories(On.Hud.orig_UpdateBuild,Hud,Player,System.Boolean)">
@@ -4056,7 +4111,12 @@
         </member>
         <member name="T:Jotunn.Managers.RenderManager">
             <summary>
-                Manager for rendering sprites of GameObjects
+                Manager for rendering <see cref="T:UnityEngine.Sprite">Sprites</see> of <see cref="T:UnityEngine.GameObject">GameObjects</see>
+            </summary>
+        </member>
+        <member name="F:Jotunn.Managers.RenderManager.IsometricRotation">
+            <summary>
+                Rotation of the prefab that will result in an isometric view
             </summary>
         </member>
         <member name="P:Jotunn.Managers.RenderManager.Instance">
@@ -4074,6 +4134,22 @@
                 Initialize the manager
             </summary>
         </member>
+        <member name="M:Jotunn.Managers.RenderManager.EnqueueRender(UnityEngine.GameObject,System.Action{UnityEngine.Sprite})">
+            <summary>
+                Create a <see cref="T:UnityEngine.Sprite"/> of the <paramref name="target"/>
+            </summary>
+            <param name="target">GameObject to render</param>
+            <param name="callback">Callback for the generated <see cref="T:UnityEngine.Sprite"/></param>
+            <returns>If there is no active visual Mesh attached to the target, this method invokes the callback with null immediately and returns false.</returns>
+        </member>
+        <member name="M:Jotunn.Managers.RenderManager.EnqueueRender(Jotunn.Managers.RenderManager.RenderRequest,System.Action{UnityEngine.Sprite})">
+            <summary>
+                Enqueue a render of the <see cref="T:Jotunn.Managers.RenderManager.RenderRequest"/>
+            </summary>
+            <param name="renderRequest"></param>
+            <param name="callback">Callback for the generated <see cref="T:UnityEngine.Sprite"/></param>
+            <returns>If there is no active visual Mesh attached to the target, this method invokes the callback with null immediately and returns false.</returns>
+        </member>
         <member name="M:Jotunn.Managers.RenderManager.EnqueueRender(UnityEngine.GameObject,System.Action{UnityEngine.Sprite},System.Int32,System.Int32)">
             <summary>
                 Queues a new prefab to be rendered. The resulting <see cref="T:UnityEngine.Sprite"/> will be ready at the next frame.
@@ -4085,12 +4161,59 @@
             <param name="height">Height of the resulting <see cref="T:UnityEngine.Sprite"/></param>
             <returns>Only true if the target was queued for rendering</returns>
         </member>
-        <member name="M:Jotunn.Managers.RenderManager.SpawnSafe(UnityEngine.GameObject)">
+        <member name="M:Jotunn.Managers.RenderManager.SpawnSafe(Jotunn.Managers.RenderManager.RenderRequest)">
             <summary>
                 Spawn a prefab without any Components except visuals. Also prevents calling Awake methods of the prefab.
             </summary>
-            <param name="prefab"></param>
+            <param name="request"></param>
             <returns></returns>
+        </member>
+        <member name="T:Jotunn.Managers.RenderManager.RenderRequest">
+            <summary>
+                Queues a new prefab to be rendered. The resulting <see cref="T:UnityEngine.Sprite"/> will be ready at the next frame. 
+            </summary>
+            <returns>Only true if the target was queued for rendering</returns>
+        </member>
+        <member name="F:Jotunn.Managers.RenderManager.RenderRequest.Target">
+            <summary>
+                Target GameObject to create a <see cref="T:UnityEngine.Sprite"/> from
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.RenderManager.RenderRequest.Width">
+            <summary>
+                Width of the generated <see cref="T:UnityEngine.Sprite"/>
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.RenderManager.RenderRequest.Height">
+            <summary>
+                Height of the generated <see cref="T:UnityEngine.Sprite"/>
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.RenderManager.RenderRequest.Rotation">
+            <summary>
+                Rotation of the prefab to capture
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.RenderManager.RenderRequest.FieldOfView">
+            <summary>
+                Field of view of the camera used to create the <see cref="T:UnityEngine.Sprite"/>. Default is small to simulate orthographic view. An orthographic camera is not possible because of shaders
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.RenderManager.RenderRequest.DistanceMultiplier">
+            <summary>
+                Distance multiplier, should not be required with the default <see cref="P:Jotunn.Managers.RenderManager.RenderRequest.FieldOfView"/>
+            </summary>
+        </member>
+        <member name="P:Jotunn.Managers.RenderManager.RenderRequest.Callback">
+            <summary>
+                Callback for the generated <see cref="T:UnityEngine.Sprite"/>
+            </summary>
+        </member>
+        <member name="M:Jotunn.Managers.RenderManager.RenderRequest.#ctor(UnityEngine.GameObject)">
+            <summary>
+                Create a new RenderRequest
+            </summary>
+            <param name="target">Object to be rendered. A copy of the provided GameObject will be created for rendering</param> 
         </member>
         <member name="T:Jotunn.Managers.SkillManager">
             <summary>
@@ -5143,6 +5266,11 @@
         <member name="P:Jotunn.Utils.ReflectionHelper.Cache.EnumerableToArray">
             <summary>
                 <see cref="T:System.Reflection.MethodInfo"/> of <see cref="M:System.Linq.Enumerable.ToArray``1(System.Collections.Generic.IEnumerable{``0})"/>
+            </summary>
+        </member>
+        <member name="P:Jotunn.Utils.ReflectionHelper.Cache.EnumerableToList">
+            <summary>
+                <see cref="T:System.Reflection.MethodInfo"/> of <see cref="M:System.Linq.Enumerable.ToList``1(System.Collections.Generic.IEnumerable{``0})"/>
             </summary>
         </member>
         <member name="P:Jotunn.Utils.ReflectionHelper.Cache.EnumerableCast">
