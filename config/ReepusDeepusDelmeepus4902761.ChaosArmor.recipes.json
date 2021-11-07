@@ -3,24 +3,22 @@
 		"Item": "T1ChaosPlateArmor",
 		"Amount": 1,
 		"Enabled": true,
-		"CraftingStation": "piece_thorsforge",
-		"RepairStation": "piece_thorsforge",
+		"CraftingStation": "forge",
+		"RepairStation": "forge",
 		"Name": "$item_armor_t1pchaosbody",
 		"Requirements": [
 			{
-				"Item": "HeavymetalBar",
-				"Amount": 15,
-				"AmountPerLevel": 6
+				"Item": "Bronze",
+				"Amount": 20,
+				"AmountPerLevel": 5
 			},
 			{
-				"Item": "WorldTreeFragment",
-				"Amount": 15,
-				"AmountPerLevel": 6
+				"Item": "TrophyFrostTroll",
+				"Amount": 1
 			},
 			{
-				"Item": "BoneFragments",
-				"Amount": 18,
-				"AmountPerLevel": 12
+				"Item": "LeatherScraps",
+				"Amount": 9
 			}
 		]
 	},
@@ -28,24 +26,18 @@
 		"Item": "T1ChaosPlateHelm",
 		"Amount": 1,
 		"Enabled": true,
-		"CraftingStation": "piece_thorsforge",
-		"RepairStation": "piece_thorsforge",
+		"CraftingStation": "forge",
+		"RepairStation": "forge",
 		"Name": "$item_helmet_t1pchaosplate",
 		"Requirements": [
 			{
-				"Item": "HeavymetalBar",
-				"Amount": 5,
-				"AmountPerLevel": 4
+				"Item": "Bronze",
+				"Amount": 10,
+				"AmountPerLevel": 3
 			},
 			{
-				"Item": "WorldTreeFragment",
-				"Amount": 5,
-				"AmountPerLevel": 4
-			},
-			{
-				"Item": "BoneFragments",
-				"Amount": 12,
-				"AmountPerLevel": 8
+				"Item": "TrophyBoar",
+				"Amount": 1
 			}
 		]
 	},
@@ -53,24 +45,23 @@
 		"Item": "T1ChaosPlateLegs",
 		"Amount": 1,
 		"Enabled": true,
-		"CraftingStation": "piece_thorsforge",
-		"RepairStation": "piece_thorsforge",
+		"CraftingStation": "forge",
+		"RepairStation": "forge",
 		"Name": "$item_legs_t1pchaoslegs",
 		"Requirements": [
 			{
-				"Item": "HeavymetalBar",
-				"Amount": 10,
+				"Item": "Bronze",
+				"Amount": 15,
+				"AmountPerLevel": 3
+			},
+			{
+				"Item": "TrollHide",
+				"Amount": 5,
 				"AmountPerLevel": 5
 			},
 			{
-				"Item": "WorldTreeFragment",
-				"Amount": 10,
-				"AmountPerLevel": 5
-			},
-			{
-				"Item": "BoneFragments",
-				"Amount": 16,
-				"AmountPerLevel": 10
+				"Item": "LeatherScraps",
+				"Amount": 4
 			}
 		]
 	},
@@ -78,24 +69,27 @@
 		"Item": "T2ChaosPlateArmor",
 		"Amount": 1,
 		"Enabled": true,
-		"CraftingStation": "piece_thorsforge",
-		"RepairStation": "piece_thorsforge",
+		"CraftingStation": "forge",
+		"RepairStation": "forge",
 		"Name": "$item_armor_t2pchaosbody",
 		"Requirements": [
 			{
-				"Item": "FrometalBar",
-				"Amount": 15,
-				"AmountPerLevel": 6
+				"Item": "Iron",
+				"Amount": 50,
+				"AmountPerLevel": 10
+			},
+			{
+				"Item": "TrophyDraugrElite",
+				"Amount": 1
 			},
 			{
 				"Item": "FreezeGland",
-				"Amount": 10,
-				"AmountPerLevel": 6
+				"Amount": 5,
+				"AmountPerLevel": 5
 			},
 			{
 				"Item": "T1ChaosPlateArmor",
-				"Amount": 1,
-				"AmountPerLevel": 0
+				"Amount": 1
 			}
 		]
 	},
@@ -103,24 +97,23 @@
 		"Item": "T2ChaosPlateHelm",
 		"Amount": 1,
 		"Enabled": true,
-		"CraftingStation": "piece_thorsforge",
-		"RepairStation": "piece_thorsforge",
+		"CraftingStation": "forge",
+		"RepairStation": "forge",
 		"Name": "$item_helmet_t2pchaosplate",
 		"Requirements": [
 			{
-				"Item": "FrometalBar",
-				"Amount": 5,
-				"AmountPerLevel": 6
+				"Item": "Iron",
+				"Amount": 30,
+				"AmountPerLevel": 5
 			},
 			{
 				"Item": "FreezeGland",
-				"Amount": 6,
-				"AmountPerLevel": 4
+				"Amount": 5,
+				"AmountPerLevel": 5
 			},
 			{
 				"Item": "T1ChaosPlateHelm",
-				"Amount": 1,
-				"AmountPerLevel": 0
+				"Amount": 1
 			}
 		]
 	},
@@ -129,23 +122,22 @@
 		"Amount": 1,
 		"Enabled": true,
 		"Name": "$item_legs_t2pchaoslegs",
-		"CraftingStation": "piece_thorsforge",
-		"RepairStation": "piece_thorsforge",
+		"CraftingStation": "forge",
+		"RepairStation": "forge",
 		"Requirements": [
 			{
-				"Item": "FrometalBar",
-				"Amount": 10,
-				"AmountPerLevel": 6
+				"Item": "Iron",
+				"Amount": 30,
+				"AmountPerLevel": 8
 			},
 			{
 				"Item": "FreezeGland",
-				"Amount": 8,
+				"Amount": 5,
 				"AmountPerLevel": 5
 			},
 			{
 				"Item": "T1ChaosPlateLegs",
-				"Amount": 1,
-				"AmountPerLevel": 0
+				"Amount": 1
 			}
 		]
 	},
@@ -154,23 +146,25 @@
 		"Amount": 1,
 		"Enabled": true,
 		"Name": "$item_armor_pchaosbodytwo",
-		"CraftingStation": "piece_thorsforge",
-		"RepairStation": "piece_thorsforge",
+		"CraftingStation": "forge",
+		"RepairStation": "forge",
 		"Requirements": [
 			{
-				"Item": "FlametalBar",
-				"Amount": 15,
-				"AmountPerLevel": 6
+				"Item": "Flametal",
+				"Amount": 20
 			},
 			{
-				"Item": "SurtlingCore",
-				"Amount": 10,
-				"AmountPerLevel": 6
+				"Item": "TrophyFenring",
+				"Amount": 1
+			},
+			{
+				"Item": "TrophySGolem",
+				"Amount": 1,
+				"AmountPerLevel": 1
 			},
 			{
 				"Item": "T2ChaosPlateArmor",
-				"Amount": 1,
-				"AmountPerLevel": 0
+				"Amount": 1
 			}
 		]
 	},
@@ -179,23 +173,48 @@
 		"Amount": 1,
 		"Enabled": true,
 		"Name": "$item_helmet_pchaosplate",
-		"CraftingStation": "piece_thorsforge",
-		"RepairStation": "piece_thorsforge",
+		"CraftingStation": "forge",
+		"RepairStation": "forge",
 		"Requirements": [
 			{
-				"Item": "FlametalBar",
-				"Amount": 5,
-				"AmountPerLevel": 6
+				"Item": "Flametal",
+				"Amount": 8
 			},
 			{
-				"Item": "SurtlingCore",
-				"Amount": 6,
-				"AmountPerLevel": 4
+				"Item": "TrophySerpent",
+				"Amount": 1
 			},
 			{
 				"Item": "T2ChaosPlateHelm",
+				"Amount": 1
+			},
+			{
+				"Item": "TrophyWraith",
 				"Amount": 1,
-				"AmountPerLevel": 0
+				"AmountPerLevel": 1
+			}
+		]
+	},
+	{
+		"Item": "ChaosPlateHelmAlt",
+		"Amount": 1,
+		"Enabled": true,
+		"Name": "$item_helmet_pchaosplate_alt",
+		"CraftingStation": "forge",
+		"RepairStation": "forge",
+		"Requirements": [
+			{
+				"Item": "Flametal",
+				"Amount": 10
+			},
+			{
+				"Item": "TrophySerpent",
+				"Amount": 5,
+				"AmountPerLevel": 2
+			},
+			{
+				"Item": "ChaosPlateHelm",
+				"Amount": 1
 			}
 		]
 	},
@@ -204,23 +223,21 @@
 		"Amount": 1,
 		"Enabled": true,
 		"Name": "$item_legs_pchaoslegs",
-		"CraftingStation": "piece_thorsforge",
-		"RepairStation": "piece_thorsforge",
+		"CraftingStation": "forge",
+		"RepairStation": "forge",
 		"Requirements": [
 			{
-				"Item": "FlametalBar",
-				"Amount": 10,
-				"AmountPerLevel": 6
+				"Item": "Flametal",
+				"Amount": 10
 			},
 			{
-				"Item": "SurtlingCore",
-				"Amount": 8,
-				"AmountPerLevel": 5
+				"Item": "GoblinTotem",
+				"Amount": 2,
+				"AmountPerLevel": 1
 			},
 			{
 				"Item": "T2ChaosPlateLegs",
-				"Amount": 1,
-				"AmountPerLevel": 0
+				"Amount": 1
 			}
 		]
 	}
