@@ -4140,7 +4140,7 @@
             </summary>
             <param name="target">GameObject to render</param>
             <param name="callback">Callback for the generated <see cref="T:UnityEngine.Sprite"/></param>
-            <returns>If there is no active visual Mesh attached to the target, this method invokes the callback with null immediately and returns false.</returns>
+            <returns>If this is called on a headless server or when there is no active visual Mesh attached to the target, this method invokes the callback with null immediately and returns false.</returns>
         </member>
         <member name="M:Jotunn.Managers.RenderManager.EnqueueRender(Jotunn.Managers.RenderManager.RenderRequest,System.Action{UnityEngine.Sprite})">
             <summary>
@@ -4148,7 +4148,7 @@
             </summary>
             <param name="renderRequest"></param>
             <param name="callback">Callback for the generated <see cref="T:UnityEngine.Sprite"/></param>
-            <returns>If there is no active visual Mesh attached to the target, this method invokes the callback with null immediately and returns false.</returns>
+            <returns>If this is called on a headless server or when there is no active visual Mesh attached to the target, this method invokes the callback with null immediately and returns false.</returns>
         </member>
         <member name="M:Jotunn.Managers.RenderManager.EnqueueRender(UnityEngine.GameObject,System.Action{UnityEngine.Sprite},System.Int32,System.Int32)">
             <summary>
@@ -4160,6 +4160,20 @@
             <param name="width">Width of the resulting <see cref="T:UnityEngine.Sprite"/></param>
             <param name="height">Height of the resulting <see cref="T:UnityEngine.Sprite"/></param>
             <returns>Only true if the target was queued for rendering</returns>
+        </member>
+        <member name="M:Jotunn.Managers.RenderManager.Render(UnityEngine.GameObject)">
+            <summary>
+                Create a <see cref="T:UnityEngine.Sprite"/> of the <paramref name="target"/>
+            </summary>
+            <param name="target"></param>
+            <returns>If this is called on a headless server or when there is no active visual Mesh attached to the target, this method returns null.</returns>
+        </member>
+        <member name="M:Jotunn.Managers.RenderManager.Render(Jotunn.Managers.RenderManager.RenderRequest)">
+            <summary>
+                Render the provided <see cref="T:Jotunn.Managers.RenderManager.RenderRequest"/>
+            </summary>
+            <param name="renderRequest"></param>
+            <returns>If this is called on a headless server or when there is no active visual Mesh attached to the target, this method returns null.</returns>
         </member>
         <member name="M:Jotunn.Managers.RenderManager.SpawnSafe(Jotunn.Managers.RenderManager.RenderRequest)">
             <summary>
@@ -4181,12 +4195,12 @@
         </member>
         <member name="P:Jotunn.Managers.RenderManager.RenderRequest.Width">
             <summary>
-                Width of the generated <see cref="T:UnityEngine.Sprite"/>
+                Pixel width of the generated <see cref="T:UnityEngine.Sprite"/>
             </summary>
         </member>
         <member name="P:Jotunn.Managers.RenderManager.RenderRequest.Height">
             <summary>
-                Height of the generated <see cref="T:UnityEngine.Sprite"/>
+                Pixel height of the generated <see cref="T:UnityEngine.Sprite"/>
             </summary>
         </member>
         <member name="P:Jotunn.Managers.RenderManager.RenderRequest.Rotation">
